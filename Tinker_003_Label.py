@@ -1,0 +1,35 @@
+# import everything from tkinter module
+# import tkinter -- Python 3.x
+# import Tkinter -- Python 2.x
+
+from tkinter import * 
+  
+  
+top = Tk()   
+top.geometry("450x300")  
+    
+# the label for user_name 
+user_name = Label(top, 
+                  text = "Username").place(x = 40,
+                                           y = 60)  
+    
+# the label for user_password  
+user_password = Label(top, 
+                      text = "Password").place(x = 40,
+                                               y = 100)  
+    
+# Submit button, the same starting x position as the above lables
+# But the Y would be at least 30 or 40 more
+submit_button = Button(top, 
+                       text = "Submit").place(x = 40,
+                                              y = 130)
+    
+user_name_input_area = Entry(top,
+                             width = 30).place(x = 110,
+                                               y = 60)  
+    
+user_password_entry_area = Entry(top,
+                                 width = 30).place(x = 110,
+                                                   y = 100)  
+      
+top.mainloop() 
